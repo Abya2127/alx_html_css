@@ -44,13 +44,15 @@ section {
   display: block;
 }
 .navbar {
+  background-color: aquamarine;
+  /* width: 85%; */
   position: absolute;
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   top: 12px;
+  margin: auto;
   z-index: 50;
-  width: 100%;
 }
 
 .split {
@@ -58,6 +60,15 @@ section {
   gap: 1em;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.testimonial {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #c271ff;
+  color: #fff;
 }
 
 .pros-section {
@@ -79,11 +90,16 @@ section {
 .hero {
   position: relative;
   text-align: center;
-  padding: 15em 0;
+  /* padding: 15em 0; */
+  padding: 8rem 0;
   color: #fff;
   background-image: url("./images/Object.png");
   height: 100%;
-  /* overflow: auto; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
 }
 .navigation {
   display: flex;
@@ -145,4 +161,50 @@ section {
 
 .primary-text {
   color: #c271ff;
+}
+
+.tutorials {
+  /* text-align: center; */
+  /* padding: 15em 0; */
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.tutorials__item {
+  width: 255px;
+  /* text-align: center; */
+}
+
+.tutorials__item__creater_img {
+  width: 40px;
+  height: 40px;
+}
+
+.tutorials__title {
+  width: 100%;
+  text-align: centers;
+}
+
+.tutorials__item__rating {
+  color: #c271ff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tutorials__item__rating__stars {
+  display: flex;
+  gap: 0.25em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tutorials__item__creater {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
 }
