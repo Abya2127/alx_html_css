@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  /* font-family: 'S', sans-serif; */
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.6;
 }
 
@@ -18,8 +18,18 @@ p {
   margin: 0;
 }
 
+blockquote {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  unicode-bidi: isolate;
+  margin-bottom: 2rem;
+}
+
 section {
-  padding: 7em 0;
+  padding: 5em 0;
 }
 
 .container {
@@ -44,15 +54,15 @@ section {
   display: block;
 }
 .navbar {
-  background-color: aquamarine;
-  /* width: 85%; */
   position: absolute;
+  width: 85%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-content: center;
   top: 12px;
   margin: auto;
   z-index: 50;
+  text-align: center;
 }
 
 .split {
@@ -105,7 +115,6 @@ section {
   display: flex;
   flex-direction: row;
   column-gap: 2rem;
-  width: 100%;
 }
 
 .navigation li {
@@ -150,6 +159,8 @@ section {
   border-radius: 1em;
   border-color: #c271ff;
   border-style: solid;
+  width: fit-content;
+  align-self: center;
 }
 
 .btn:hover,
@@ -207,4 +218,99 @@ section {
   flex-wrap: wrap;
   /* justify-content: center; */
   align-items: center;
+}
+
+.membership {
+  text-align: center;
+  padding: 8rem 0;
+  color: #fff;
+  background-color: #071629;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.tutorials h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.membership {
+  text-align: center;
+  padding: 8rem 0;
+  color: #fff;
+  background-color: #071629;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 4rem; */
+}
+
+.membership__items {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+}
+
+.membership__item {
+  width: 200px;
+}
+
+.membership__item__logo {
+  display: block;
+  color: #c271ff;
+}
+
+.faq {
+  text-align: center;
+  padding: 8rem 0;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.faq__items {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  gap: 3rem;
+}
+
+.faq__item {
+  width: 50%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer {
+  text-align: center;
+  /* padding: 8rem 0; */
+  color: #fff;
+  background-color: #071629;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
 }
